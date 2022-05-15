@@ -1,10 +1,10 @@
 .blog__container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.25fr;
     margin: 0 auto;
     width: 100%;
-    max-width: 1400px;
-    padding-left: 300px ;
+    max-width: 1050px;
+    padding-left: 250px ;
     margin-top: 55px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .blog__content h1{
-    font-size: 45px;
+    font-size: 42px;
     color: rgb(48, 48, 48);
 }
 
@@ -35,7 +35,7 @@
 }
 
 .box-section h1{
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 10px;
     padding-left: 20px;
    
@@ -63,9 +63,9 @@
 
 .blog__side input{
     width: 100%;
-    height: 40px;
+    height: 25px;
     color: rgb(168, 168, 168);
-    font-size: 18px;
+    font-size: 14px;
     border: 2px solid rgb(219, 219, 219);
     border-radius: 5px;
     margin: 30px 0px 20px 0px;
@@ -89,7 +89,7 @@
     margin-left: 15px;
     font-size: 16px;
     height: 30px;
-    width: 55%;
+    width: 70%;
     border-radius: 5px;
     background: #07a020;
     color: #ffffff;
@@ -98,11 +98,11 @@
 .button3 {
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 15px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    height: 100%;
+    height: 30px;
     width: 60%;
     border: 2px solid #07a020;
     border-radius: 5px;
@@ -120,32 +120,32 @@
     content: " ";
     display: block;
     border-bottom: 1px solid black;
-    padding-top: 20px ;
-    margin-bottom: 30px;
+    padding-top: 10px ;
+    margin-bottom: 20px;
   }
 
   .share__link:before {  /*to add horizontal line above the share  link */
     content: " ";
     display: block;
     border-top: 1px solid black;
-    padding-bottom: 20px ;
-    margin-top: 30px;
+    padding-bottom: 5px ;
+    margin-top: 20px;
   }
 
   
 
   /* responsive of growth section */
 
-@media screen and (max-width: 1800px) {
+/* @media screen and (max-width: 1800px) {
     .blog__container{
         grid-template-columns: 1fr;
         max-width: 1000px;
         padding-left: 30px;
    
     }
-}
+} */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .blog__container{
         grid-template-columns: 1fr;
         width: 70%;
