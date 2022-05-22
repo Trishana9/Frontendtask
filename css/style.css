@@ -5,10 +5,10 @@
 
 /* navigation section */
 
-.navbar{
+/* .navbar{
     justify-content: center;
     align-items: center;
-}
+} */
 
 .navbar-container{
     display: flex;
@@ -37,7 +37,7 @@
     justify-content: center;
     text-decoration: none;
     height: 100%;
-    width: 125px;  
+    width: 65px;  
     font-weight: bold;
     padding-top: 50px;
 }
@@ -69,24 +69,71 @@
 
   /* responsive nav */
 
-  @media screen and (max-width:920px){
+  @media (max-width:600px) {
     .navbar-container{
-      padding: 0px 40px;
+      display: grid;
+      /* grid-template-rows: 3; */
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+      padding: 0 10px;
   }
   
   .nav-logo{
       width: 200px;
       height: 80px;
+      padding-left: 50px;
   }
-  
+  .nav-side{
+    padding-left: 70px;
+  }
   
   .navbar-links{
-      height: 100%;
-      width: 60px; 
-      font-size: 14px; 
+      /* height: 100%; */
+      width: 80px; 
+      padding-top: 10px;
   }
   
-}
+  .navbar-btn {
+      padding-top: 20px;
+  
+    }
+  
+  }
+
+  @media (max-width:1200px) {
+    .navbar-container{
+      display: grid;
+      /* grid-template-rows: 3; */
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+      padding: 0 10px;
+  }
+  
+  .nav-logo{
+      width: 200px;
+      height: 80px;
+      padding-left: 50px;
+  }
+  .nav-side{
+    padding-left: 70px;
+  }
+  
+  .navbar-links{
+      /* height: 100%; */
+      width: 80px; 
+      padding-top: 10px;
+  }
+  
+  .navbar-btn {
+      padding-top: 20px;
+  
+    }
+  
+  }
+  
+  
  /* responsive nav end*/
 
   /* category section */
@@ -128,6 +175,10 @@
     color:  #4dad62;
   }
 
+  input:focus{
+    outline: none;
+}
+
   .category-search{
     display: flex;
     align-items: center;
@@ -140,12 +191,13 @@
   .category-search input{
     width: 100px;
     height: 25px;
-    color: rgb(223, 223, 223);
+    /* color: rgb(223, 223, 223); */
     font-size: 13px;
     font-weight: bold;
-    text-align: center;
-    border: 2px solid rgb(221, 221, 221);
-    border-radius: 5px;
+    /* text-align: center; */
+    border: none;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    /* border-radius: 5px; */
   }
 
   .category-item a {
@@ -175,22 +227,63 @@
 
 
    /* responsive category start*/
-  @media screen and (max-width:900px){
 
-  .category{
-      padding: 0 5px;
+   @media (max-width: 1200px) {
+
+    .category{
+      padding: 0 10px;
+      /* display: grid; */
   }
 
   .category-section:after {  /*to add horizontal line below the category */
-  
-    margin: 8px auto;
-  }
+      margin: 8px auto;
+    }
+
     
-  .category-links{
-    width: 130px;
-    font-size: 14px;
+    .category-links{
+        width: 130px;  
+        padding-top: 120px;    
+        }
+
+    .category-search{
+      width: auto;
+      padding-top: 120px; 
+    }
+
+    .category-item a {
+        position: relative;
+      }
+   }
+
+
+   @media (max-width: 600px) {
+
+    .category{
+      padding: 0 10px;
+      display: grid;
   }
-}
+
+  .category-section:after {  /*to add horizontal line below the category */
+      margin: 8px auto;
+    }
+
+    
+    .category-links{
+        width: 110px;  
+        padding-top: 120px;    
+        }
+
+    .category-search{
+      width: 400px;
+      padding-top: 20px;  
+    }
+
+    .category-item a {
+        position: relative;
+      }
+   }
+
+   
    /* responsive category end*/
 
 
@@ -203,19 +296,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 100%;
-    max-width: 1100px;
-  }
-  
-  .main__content {
-    color: rgb(15, 14, 14);
-    width: 100%;
+    width: 70%;
   }
   
   .main__content h1 {
     font-size: 2rem;
-    color: #030303;
   }
+
   .main__content--icon{
     display: grid;
     grid-template-columns: 75px 1fr;
@@ -263,32 +350,68 @@
   /* main Section end */
 
 
-   /* responsive main start*/
-
-  @media screen and (max-width:900px){
-    .main {
-      padding: 2rem 30px;
-    }
-    
-    .main__content h1 {
-      font-size: 1.15rem;
+   /* responsive main start */
+   @media (max-width:1200px) {
+   
+    .main__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0px 120px;
+      margin: 0 2px;
     }
   
-    .main__content--card img{
-      height: 50px;
-      width: 50px;
+    .main__content--icon{
+      display: grid;
+      grid-template-columns: 75px 1fr;
+      align-items: center;
+      padding: 20px 0px;
+    }
+    
+    .main__img--card {
+      padding: 20px 0px;
+       }
+     
+   }
+
+
+   @media (max-width:600px) {
+   
+    .main__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0px 20px;
+      margin: 0 2px;
+    }
+  
+    
+    .main__content h1 {
+      font-size: 1.5rem;
+    }
+    .main__content--icon{
+      display: grid;
+      grid-template-columns: 75px 1fr;
+      align-items: center;
+      padding: 20px 0px;
+    }
+
+  
+    .main__content--icon p{
+      font-size: 14px;
     }
     
     .main__content p {
       font-size: 1rem;
     }
+  
     
     .main__img--card {
-      padding-left: 50px;
-      height: 230px;
-      width: 350px;
-    }
-  }
+      padding: 20px 0px;
+      height: 250px;
+      width: 400px;
+       }
+     
+   }
+
    /* responsive main stop*/
 
 
@@ -335,13 +458,14 @@
 .engineer__content h1{
   padding-top: 1rem;
   font-size: 25px;
+   width: 90%;
 }
 
 .engineer__content p{
   margin-right: 100px;
   font-size: 1.25rem;
   color: #929292;
-  width: 100%;
+  width: 90%;
   
 }
 
@@ -353,50 +477,43 @@
 
  /* responsive engineer stop*/
 
- @media screen and (max-width:900px){
+ @media (max-width: 1200px) {
   .engineer-main{
-    padding: 2rem 100px 0px 100px;
+    padding: 10px 110px;
   }
-
-  .engineering__link a{
-    padding-left: 320px;
-  }  
   
-}
-
-@media screen and (max-width:900px){
-  .engineer-main{
-    padding: 2rem 20px 0px 20px;
-  }
-
   .engineering__link a{
-    padding-left: 150px;
+    padding-left: 30px;
+    font-size: 14px;
   }
+  
+ }
 
+
+ @media (max-width: 600px) {
+  .engineer-main{
+    padding: 0px 20px;
+  }
+  
   .main__img--card2{
-    height: 230px;
-    width: 380px;
-    margin-right: 40px;
+    height: 250px;
+    width: 400px;
   }
-
   .main__img--container h1{
-    font-size: 1.15rem;
+    font-size: 20px;
   }
-
+  
   .main__img--container p{
-    margin-right: 50px;
     font-size: 1rem;
   }
-
+  
   .engineer__content h1{
-    font-size: 1.15rem;
+    font-size: 20px;
   }
-
+  
   .engineer__content p{
     font-size: 1rem;
-    
-  } 
-  
-}
+  }
 
+ }
  /* responsive engineer start*/
