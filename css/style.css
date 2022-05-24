@@ -4,6 +4,11 @@
 }
 
 /* navigation section */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 .navbar{
     justify-content: center;
@@ -211,7 +216,6 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 100%;
-    max-width: 1400px;
   }
   
   .main__content {
@@ -304,7 +308,7 @@
   display: grid;
   grid-template-columns: 20px 1fr 1fr;
   align-items: center;
-  padding: 2rem 220px 0px 220px;
+  padding: 2rem 0 0px 0px;
 }
 
 .engineering__link a{
