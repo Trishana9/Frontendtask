@@ -10,6 +10,13 @@
   margin: 0 auto;
 }
 
+@media (max-width:600px) {
+
+  .container {
+    /* max-width: 500px; */
+    width: auto;
+  
+}}
 .navbar{
     justify-content: center;
     align-items: center;
@@ -320,6 +327,7 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
+    object-fit: cover;
 
   }
 
@@ -491,16 +499,16 @@
     font-size: 14px;
   }
 
-  .engineer__content p{
+  /* .engineer__content p{
     width: auto;
-  }
+  } */
   
  }
 
 
  @media (max-width: 600px) {
   .engineer-main{
-    padding: 0px 0px;
+    padding: 0px 20px;
     grid-template-columns: 1fr;
     
   }
