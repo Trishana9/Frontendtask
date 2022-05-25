@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0 auto;
-    width: 100%;
-    max-width: 1400px;
+    /* width: 100%;
+    max-width: 1400px; */
     padding-left: 300px ;
     margin-top: 55px;
 }
@@ -12,8 +12,9 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     margin: 100px 0px;
-    padding: 40px;
-    width: 90%;
+    padding: 50px;
+    margin-right: 90px;
+    /* width: 90%; */
     border: 1px solid rgb(243, 243, 243);
     border-radius: 4px;
     background-color: rgb(243, 243, 243);
@@ -136,20 +137,11 @@
 
   /* responsive of growth section */
 
-@media screen and (max-width: 1800px) {
+  @media (max-width: 1600px) {
     .blog__container{
         grid-template-columns: 1fr;
+        /* width: 70%; */
         max-width: 1000px;
-        padding-left: 30px;
-   
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .blog__container{
-        grid-template-columns: 1fr;
-        width: 70%;
-        max-width: 700px;
         padding-left: 30px;
     }
     .box-section h1{
@@ -165,6 +157,68 @@
         width: 220px;
         height: 260px;
     }
+}
+
+
+@media (max-width: 600px) {
+    .blog__container{
+        padding-right: 0px;
+
+    }
+    .blog__content h1{
+        font-size: 26px;
+    }
+    
+    .blog__content p{
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .box-section h1{
+        font-size: 18px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+       
+    }
+
+   .box-section{
+        margin-right: 30px;
+        padding-right: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    .box-section p{
+        font-size: 14px;
+        padding-left: 0px;
+    }
+    
+    .box-section--img img{
+        width: 220px;
+        height: 260px;
+        padding-top: 30px;
+        padding-left: 40px;
+        
+    }
+
+    .segment__link{
+        font-size: 14px;
+    }
+
+    /* .box-section{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin: 100px 0px;
+        padding: 50px;
+        margin-right: 90px;
+        
+        border: 1px solid rgb(243, 243, 243);
+        border-radius: 4px;
+        background-color: rgb(243, 243, 243);
+    } */
+    
+
+    
+   
 }
 
   /* responsive of growth section */
