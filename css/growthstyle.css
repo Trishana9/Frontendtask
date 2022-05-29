@@ -169,6 +169,7 @@
 @media (max-width: 600px) {
     .blog__container{
         padding-right: 0px;
+        padding-left: 5%;
 
     }
     .blog__content h1{
